@@ -1,1 +1,20 @@
-<p>navbar works!</p>
+<div class="navbar">
+
+  <div class="navbar__body">
+
+    <div class="">
+      <p>logo</p>
+    </div>
+
+    <div class="d__flex--center">
+
+      <div *ngFor="let enlace of enlaces">
+
+        <a class="navbar__link" [href]="enlace.url">{{ enlace.nombre }}</a>
+      
+      </div>
+
+    </div>
+  </div>
+
+</div>

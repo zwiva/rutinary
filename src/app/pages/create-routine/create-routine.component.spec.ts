@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewAditionComponent } from './new-addition.component';
+import { CreateRoutineComponent } from './create-routine.component';
 
-describe('NewAditionComponent', () => {
-  let component: NewAditionComponent;
-  let fixture: ComponentFixture<NewAditionComponent>;
+describe('CreateRoutineComponent', () => {
+  let component: CreateRoutineComponent;
+  let fixture: ComponentFixture<CreateRoutineComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NewAditionComponent]
+      imports: [CreateRoutineComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NewAditionComponent);
+    fixture = TestBed.createComponent(CreateRoutineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

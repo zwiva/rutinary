@@ -4,11 +4,11 @@ import { FooterComponent } from "../../components/shared/footer/footer.component
 import { AddFormComponent } from "../../components/core/add-form/add-form.component";
 
 @Component({
-  selector: 'app-new-adition',
+  selector: 'app-create-routine',
   imports: [NavbarComponent, FooterComponent, AddFormComponent],
-  templateUrl: './new-addition.component.html',
-  styleUrl: './new-addition.component.css'
+  templateUrl: './create-routine.component.html',
+  styleUrl: './create-routine.component.css'
 })
-export class NewAditionComponent {
+export class CreateRoutineComponent {
 
 }

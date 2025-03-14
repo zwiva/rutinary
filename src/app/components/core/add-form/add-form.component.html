@@ -1,1 +1,23 @@
-<p>add-form works!</p>
+<form [formGroup]="routine" (ngSubmit)="onSubmit()" style="display: flex; flex-direction: column; gap: 1em;">
+
+  <div>
+    <label>Titulo:</label>
+    <input type="text" formControlName="title" />
+    <div *ngIf="routine.controls.title?.invalid && routine.controls.title?.touched">
+      <small *ngIf="routine.controls.title?.errors?.['required']">El title es obligatorio</small>
+      <small *ngIf="routine.controls.title?.errors?.['title']">El title no es válido</small>
+    </div>
+  </div>
+
+  <div>
+    <label>Duración:</label>
+    <input type="text" formControlName="duration" />
+    <div *ngIf="routine.controls.duration?.invalid && routine.controls.duration?.touched">
+      <small *ngIf="routine.controls.duration?.errors?.['required']">La contraseña es obligatoria</small>
+      <small *ngIf="routine.controls.duration?.errors?.['minlength']">Mínimo 6 caracteres</small>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="routine.invalid">Ingresar</button>
+
+</form>

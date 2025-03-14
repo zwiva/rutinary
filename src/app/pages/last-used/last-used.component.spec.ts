@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LastviewComponent } from './last-view.component';
+import { LastUsedComponent } from './last-used.component';
 
-describe('LastviewComponent', () => {
-  let component: LastviewComponent;
-  let fixture: ComponentFixture<LastviewComponent>;
+describe('LastUsedComponent', () => {
+  let component: LastUsedComponent;
+  let fixture: ComponentFixture<LastUsedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LastviewComponent]
+      imports: [LastUsedComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LastviewComponent);
+    fixture = TestBed.createComponent(LastUsedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

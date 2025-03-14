@@ -1,0 +1,27 @@
+.navbar {
+  height: 4em;
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar__body {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__link {
+  color: white;
+  margin: 0 0.75em;
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+  color: gray;
+}
