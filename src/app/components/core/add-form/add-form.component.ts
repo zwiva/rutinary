@@ -17,7 +17,6 @@ export class AddFormComponent implements OnInit {
 
   ngOnInit() {
     console.log('this.routine vacio ->', this.routine);
-
   }
 
   onSubmit() {
@@ -25,10 +24,8 @@ export class AddFormComponent implements OnInit {
     console.log('this.routine con data ->', this.routine);
 
     if (this.routine.valid) {
-      
       console.log('Formulario válido:', this.routine.value);
       this.routine.reset(); // limpiar
-
     } else {
       console.log('Formulario inválido');
     }

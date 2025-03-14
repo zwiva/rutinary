@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f39c12;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --font-family: 'Arial', sans-serif;
+
+  --btn-primary-color: black;
+  --btn-secondary-color: white;
+
+}

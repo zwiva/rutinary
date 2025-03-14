@@ -1,24 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100dvh;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.d__flex--center {
-  display: flex;
-  justify-content: center;
-}
+@import './styles/base/_variables.css';
+@import './styles/base/_reset.css';
+@import './styles/base/_utilities.css';
+@import './styles/layout/_grid.css';
+@import './styles/layout/_flexbox.css';
+@import './styles/components/_buttons.css';
+@import './styles/components/_cards.css';
+@import './styles/components/_forms.css';
+@import './styles/themes/_light-theme.css';
+@import './styles/themes/_dark-theme.css';
